@@ -30,7 +30,8 @@ ProjektDiagram.drawio.png
 Huvudsyftet är att sammanställa data från TMP36-sensorn med hjälp av ESP 32-mikrokontroller och överföra denna information till Azure IoT Hub. Därefter är tanken att dess data lagras i en Cosmos DB-databas samt realtidsanalys och bearbetning genom användning av Stream Analytics-tjänsten i Azure. 
 
 
-Slutligen är avsikten att överföra det bearbetade data till Power BI för att skapa visuella representationer. ESP32 kommer att ansvara för överföringen av data till Azure IoT Hub, där integration med Azure Functions ska implementeras för att skapa en trigger. Denna funktions-trigger ska sedan användas för att starta sändning av meddelanden till användaren via Telegram om sensorn känner av en viss temperatur. Integration av telegram är möjligt med Azure-funktioner och Telegrams API. Man behöver dock om man har rätt autentiserings nycklar.
+Slutligen är avsikten att överföra det bearbetade data till Power BI för att skapa visuella representationer. ESP32 kommer att ansvara för överföringen av data till Azure IoT Hub, där integration med Azure Functions ska implementeras för att skapa en trigger. Denna funktions-trigger ska sedan användas för att starta sändning av meddelanden till användaren via Telegram om sensorn känner av en viss temperatur. Integration av telegram är möjligt med Azure-funktioner och Telegrams API. Man behöver dock om man har rätt autentiserings nycklar. För att säkra kommunikationen mellan enheten och IoT-hubben används en MQTT-anslutning. Det är ett transportlager för säkerhet och genom kryptering av meddelandet förhindrar det obehörig åtkomst.
+
 
 Koppling: 
 
