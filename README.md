@@ -49,11 +49,14 @@ Information om användning
 
 // Wifi
 #define IOT_CONFIG_WIFI_SSID "SSID"
+
 #define IOT_CONFIG_WIFI_PASSWORD "PWD"
 
 // Azure IoT
 #define IOT_CONFIG_IOTHUB_FQDN "Your Azure IoT host name.azure-devices.net"
+
 #define IOT_CONFIG_DEVICE_ID "DEVICE ID"
+
 #define IOT_CONFIG_DEVICE_KEY "DEVICE KEY"
 
 
