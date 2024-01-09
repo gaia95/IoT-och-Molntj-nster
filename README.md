@@ -48,6 +48,7 @@ Information om användning
 5. För att överföra data till IoT-hubben, krävs det viktig information om Azure IoT-Hubb, enhetens ID och nyckel samt WiFi-anslutningen:
 
 // Wifi
+
 #define IOT_CONFIG_WIFI_SSID "SSID"
 
 #define IOT_CONFIG_WIFI_PASSWORD "PWD"
