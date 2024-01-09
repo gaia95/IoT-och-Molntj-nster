@@ -21,6 +21,10 @@ Komponenter för projektet:
 
 Översikt:
 
+![](bilder/Diagram.drawio.png)
+
+
+
 ProjektDiagram.drawio.png
 
 Huvudsyftet är att sammanställa data från TMP36-sensorn med hjälp av ESP 32-mikrokontroller och överföra denna information till Azure IoT Hub. Därefter är tanken att dess data lagras i en Cosmos DB-databas samt realtidsanalys och bearbetning genom användning av Stream Analytics-tjänsten i Azure. 
@@ -30,7 +34,7 @@ Slutligen är avsikten att överföra det bearbetade data till Power BI för att
 
 Koppling: 
 
-kopplingsch.png
+![](bilder/kopplingsch.png)
 
 
 Anslutning av TMP36GZ-temperatursensorn till ESP 32 för mätning av omgivningstemperaturen. Kopplar ihop ESP’s hårdvaru pinnar till brädan för att förse den med ström.
@@ -43,7 +47,7 @@ Information om användning
 
 3. Datat samlas med hjälp av enheten (ESP 32) och skickar det till Azure IoT Hub.
 
-   IoT Hubb msg.png
+  ![](bilder/IoT%20Hubb%20msg.png)
 
 5. För att överföra data till IoT-hubben, krävs det viktig information om Azure IoT-Hubb, enhetens ID och nyckel samt WiFi-anslutningen:
 
